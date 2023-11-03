@@ -1,0 +1,44 @@
+Les types en python:
+str(string): "bonjour", "l'école", 'Test', '1', ""
+int(integer): 1, 10, 10000, 2, -12 (Tous les nombres et chiffres on décimaux)
+float: 1.2, -50.2 (Tous les nombres décimaux)
+bool (Boolean): True, False
+tuple (Tableau immuable): (1, '2', 2.5, -2, "")
+list (Tableau muable): ['1', 1, "", True]
+dict (Dictionary): {'clé':'valeur'}/{"nom":"Ouattara","age":12}
+# commentaire sur une ligne
+"""
+Commentaire
+sur
+plusieurs
+ligne
+"""
+Les variables:
+
+
+[reservation_fr]
+ exten => s,1,Answer()
+   same=> n,agi(googletts.agi,"Restaurant les délices de laetitia bonjour.",fr )
+   same=> n,agi(googletts.agi,"Les menus de la semain sont fonction des jours.",fr)
+   same=> n,agi(googletts.agi,"soyez attentif nous dictons les  noms de repas maintenant.",fr)
+   same=> n,agi(googletts.agi,"lundi nous auron au petit dejeuner : pain homelette, des pain au rainsin,des croissants,
+    des pain au chocolat acommpagnerd'une boisson chaude; pour le dejeuner nous aurons: la sauce graine avec les patte de boeuf,
+    sauce arrachide avec du poulet africain , sauce aubergine avec de la viande de boeuf accompagner d'une du riz , du foutou
+    pour le dîner  nous aurons :  poulet grillé  et braisé ; du poisson braisé et grillé 
+    ,du porc braisé et sauté accommpagner d'attiéké , alloco, frite, des saucisses braisés
+    de la salade de laitus avec des legumes.",fr)
+   same=> n,agi(googletts.agi," Mardi nous proposonsau petit dejeuner: des cakes, des pain suisse, des venoise accompagner d'une boisson chaude;
+     pour le dejeuner nous aurons: de la sauce akpi avec du poulet, sauce feuille patate,avec du poisson, la legume avec du poulet 
+     accompagner du riz , du foutou; pour le dîner  nous aurons: les spaguethie a la viande ahaché, soja au poulet,
+     de la macedoine au poulet accompagner de pain.",fr)
+   same=>n,agi(googletts.agi," Mercredi nous proposonsau petit dejeuner: des madelaine , des beignés  accompagner d'une boisson chaude 
+       et de la bouille de mil; pour le dejeuner nous aurons: de la sauce djumgblé avec du poisson,
+       sauce gombo grillé avec du poisson, soupe de poulet accompagner du riz , du foutou et de l'attiéké;
+        pour le dîner  nous aurons: les petit poids a la viande ahaché, du haricot au poulet,accompagner de pain.",fr)
+    same=>n,agi(googletts.agi," Jeudi nous proposonsau petit dejeuner: des tortures, des  pains complet , des pains au son
+        accompagner d'une boisson chaude et de confiture; pour le dejeuner nous aurons: de la sauce tomate avec du poisson,
+       soupe  de poisson, soupe de poulet accompagner du riz , du foutou et de l'attiéké;
+        pour le dîner  nous aurons: les petit poids a la viande ahaché, du haricot au poulet,accompagner de pain.",fr)
+
+
+   same=> n,agi(googletts.agi," Nous vous redirigeons vers un de nos agent pour une meilleure prise en charge de votre reservation.",fr)
